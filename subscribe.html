@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Styles/my-styles.css">
+        <script src="https://kit.fontawesome.com/219a6e2e01.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <title>Trabaja con nosotros</title>
+    </head>
+    <body>
+        <header>
+            <nav>            
+                <a class="header_navs" href="index.html">Inicio</a>
+                <a class="header_navs" href="location.html">Dónde estamos</a>
+                <a class="header_navs" href="contact.html">Contacto</a>
+                <a class="header_navs" href="subscribe.html">Trabaja con nosotros</a>
+                
+            </nav>
+            <br>
+            <h1>
+                <span>
+                    <img src="img/justus-menke-hXLIjzpyv08-unsplash.jpg" alt="coffee beans" width="85">
+                </span>
+                <span class="main_title">Coffee's</span>
+                <span>
+                    <img src="img/justus-menke-hXLIjzpyv08-unsplash.jpg" alt="coffee beans" width="85">
+                </span>
+            
+            </h1>
+            
+        </header>
+    <main>
+        <h2>
+            Para postularte:
+        </h2>
+        <form action="show_data.html" target="_blank" method="POST">
+            <ul>
+                <li><label for="apellido">Apellido:</label>
+                    <input type="text" name="last-name" id="apellido" placeholder="Ingresa tu apellido">
+                </li>
+                <li><label for="nombre">Nombres:</label>
+                    <input type="text" name="first-name" id="nombre" placeholder="Ingresa tu nombre">
+                </li>               
+                <li><label for="birthdate">Fecha de nacimiento:</label>
+                    <input type="date" name="birthdate" id="birthdate" min="18" max="120" placeholder="Ingresa tu edad">
+                <li><label for="dirección">Dirección:</label>
+                    <input type="text" name="address" id="dirección"
+                        placeholder="Ingresa tu dirección (calle y número, piso y dto)" size="35">
+                </li>
+                <li><label for="zip-code">Código Postal:</label>
+                    <input type="text" name="zip-code" id="zip-code" placeholder="Ingresa tu Código Postal">
+                </li>
+                <li>
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" name="city" value="Ciudad Autónoma de Buenos Aires" id="ciudad" size="30">
+                </li>
+                <li>
+                    <label for="phone">Teléfono</label>
+                    <input type="number" name="phonenumber" id="phone" placeholder="Cód de área + núm">
+                </li>
+                <li><label for="email">Correo electrónico:</label>
+                    <input type="email" name="email" id="email" placeholder="Ingresa tu dirección de E-mail" size="30">
+                </li>
+                <li>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
+                </li>                
+                <li>
+                    <h4>Género</h4>
+                    <input type="radio" name="gender" value="male"> Masculino
+                    <input type="radio" name="gender" value="female"> Femenino
+                    <input type="radio" name="gender" value="other" checked> Otro
+                </li>
+                <li>
+                    <h4>Estudios</h4>
+                    <label for="estudios">Elige el nivel más alto que hayas alcanzado</label>
+                    <select name="education" id="estudios">
+                        <option value="primary">Primarios</option>
+                        <option value="secondary" selected>Secundarios</option>
+                        <option value="technical">Terciarios</option>
+                        <option value="university">Universitarios</option>
+                        <option value="none">Ninguno</option>
+                    </select>
+                </li>
+                <li>
+                    <h4>Idiomas</h4>
+                    <input type="checkbox" name="languages" value="english"> Inglés
+                    <input type="checkbox" name="languages" value="french"> Francés
+                    <input type="checkbox" name="languages" value="german"> Alemán
+                    <input type="checkbox" name="languages" value="portuguese"> Portugués/Gallego
+                    <input type="checkbox" name="languages" value="other"> Otro
+                </li>    
+            </ul>
+            <span class="form_buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </span>
+        </form>
+    </main>
+    <footer>
+        <span><a href="https://www.youtube.com" target=_blank><i class="fa-brands fa-youtube"></i></a></span>
+        <span><a href="https://www.instagram.com" target=_blank><i class="fa-brands fa-instagram"></i></a></span>
+        <span><a href="https://www.twitter.com" target=_blank><i class="fa-brands fa-twitter"></i></a></span>
+        <br>
+        <p class="copyright">©2022 Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
