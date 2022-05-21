@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 header, footer{
     text-align: center;
@@ -39,6 +40,16 @@ h4{
 a{
     color: floralwhite;
 }
+a:hover{
+    background-color: rgb(245, 213, 117);
+    color: darkred;
+    padding: 8px;
+    transition: .5s;
+}
+ul{
+    list-style-position: inside;
+}
+
 table, td, th{
     border: 1px solid black;
 }
@@ -46,7 +57,7 @@ table{
     border-collapse: collapse;
 }
 td, th{
-    padding: 0 15px;
+    padding: 5px 15px;
 }
 .to_the_side{
     float: left;
@@ -114,5 +125,5 @@ footer span{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    
+    justify-content: space-between;     
 }
