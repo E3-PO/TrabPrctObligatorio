@@ -14,6 +14,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="Favicons/favicon-16x16.png">
         <link rel="manifest" href="Favicons/site.webmanifest">
         <title>Trabaja con nosotros</title>
+        <script defer src="/JS/script.js"></script>
     </head>
     <body>
         <header>
@@ -32,17 +33,14 @@
                 <span class="main_title">Coffee's</span>
                 <span class="header_picture">
                     <img src="img/header_picture(edited).jpg" alt="coffee beans" width="85">
-                </span>
-            
+                </span>            
             </h1>
-            
         </header>
     <main>
         <h2>
             Para postularte:
         </h2>
-        <!--Por alguna razón no me está tomando la página show_data.html-->
-        <form action="show_data.html" target="_blank" method="POST">
+        <form id="subscribe" method="POST">
             <ul>
                 <fieldset>
                     <legend>Datos personales:</legend>
@@ -56,7 +54,12 @@
                     </li>               
                     <li>
                         <label for="birthdate">Fecha de nacimiento:</label>
-                        <input type="date" name="birthdate" id="birthdate" min="18" max="120" placeholder="Ingresa tu edad">
+                        <input type="date" name="birthdate" id="birthdate">
+                    </li>
+                    <li>
+                        <label for="ID">DNI número:</label>
+                        <input type="number" name="ID" id="ID" placeholder="Ingrese su DNI sin puntos">
+                    </li>
                     <li>
                         <label for="dirección">Dirección:</label>
                         <input type="text" name="address" id="dirección"
@@ -72,7 +75,7 @@
                     </li>
                     <li>
                         <label for="phone">Teléfono</label>
-                        <input type="number" name="phonenumber" id="phone" placeholder="Cód de área + núm">
+                        <input type="tel" name="phonenumber" id="phone" pattern="[0-9]{2}[0-9]{4}[0-9]{4}" placeholder="Cód de área + núm">
                     </li>
                     <li>
                         <label for="email">Correo electrónico:</label>
