@@ -9,10 +9,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="Favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Favicons/favicon-16x16.png">
+        <link rel="manifest" href="Favicons/site.webmanifest">
         <title>Trabaja con nosotros</title>
     </head>
     <body>
@@ -27,11 +27,11 @@
             <br>
             <h1>
                 <span>
-                    <img src="img/justus-menke-hXLIjzpyv08-unsplash.jpg" alt="coffee beans" width="85">
+                    <img src="img/header_picture(edited).jpg" alt="coffee beans" width="85">
                 </span>
                 <span class="main_title">Coffee's</span>
-                <span>
-                    <img src="img/justus-menke-hXLIjzpyv08-unsplash.jpg" alt="coffee beans" width="85">
+                <span class="header_picture">
+                    <img src="img/header_picture(edited).jpg" alt="coffee beans" width="85">
                 </span>
             
             </h1>
@@ -41,63 +41,81 @@
         <h2>
             Para postularte:
         </h2>
+        <!--Por alguna razón no me está tomando la página show_data.html-->
         <form action="show_data.html" target="_blank" method="POST">
             <ul>
-                <li><label for="apellido">Apellido:</label>
-                    <input type="text" name="last-name" id="apellido" placeholder="Ingresa tu apellido">
-                </li>
-                <li><label for="nombre">Nombres:</label>
-                    <input type="text" name="first-name" id="nombre" placeholder="Ingresa tu nombre">
-                </li>               
-                <li><label for="birthdate">Fecha de nacimiento:</label>
-                    <input type="date" name="birthdate" id="birthdate" min="18" max="120" placeholder="Ingresa tu edad">
-                <li><label for="dirección">Dirección:</label>
-                    <input type="text" name="address" id="dirección"
+                <fieldset>
+                    <legend>Datos personales:</legend>
+                    <li>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" name="last-name" id="apellido" placeholder="Ingresa tu apellido">
+                    </li>
+                    <li>
+                        <label for="nombre">Nombres:</label>
+                        <input type="text" name="first-name" id="nombre" placeholder="Ingresa tu nombre(s)">
+                    </li>               
+                    <li>
+                        <label for="birthdate">Fecha de nacimiento:</label>
+                        <input type="date" name="birthdate" id="birthdate" min="18" max="120" placeholder="Ingresa tu edad">
+                    <li>
+                        <label for="dirección">Dirección:</label>
+                        <input type="text" name="address" id="dirección"
                         placeholder="Ingresa tu dirección (calle y número, piso y dto)" size="35">
-                </li>
-                <li><label for="zip-code">Código Postal:</label>
-                    <input type="text" name="zip-code" id="zip-code" placeholder="Ingresa tu Código Postal">
-                </li>
-                <li>
-                    <label for="ciudad">Ciudad:</label>
-                    <input type="text" name="city" value="Ciudad Autónoma de Buenos Aires" id="ciudad" size="30">
-                </li>
-                <li>
-                    <label for="phone">Teléfono</label>
-                    <input type="number" name="phonenumber" id="phone" placeholder="Cód de área + núm">
-                </li>
-                <li><label for="email">Correo electrónico:</label>
-                    <input type="email" name="email" id="email" placeholder="Ingresa tu dirección de E-mail" size="30">
-                </li>
-                <li>
-                    <label for="password">Contraseña:</label>
-                    <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
-                </li>                
-                <li>
-                    <h4>Género</h4>
-                    <input type="radio" name="gender" value="male"> masculino
-                    <input type="radio" name="gender" value="female"> femenino
-                    <input type="radio" name="gender" value="other" checked> otro
-                </li>
-                <li>
-                    <h4>Estudios</h4>
-                    <label for="estudios">Elige el nivel más alto que hayas alcanzado</label>
-                    <select name="education" id="estudios">
-                        <option value="primary">primarios</option>
-                        <option value="secondary" selected>secundarios</option>
-                        <option value="technical">terciarios</option>
-                        <option value="university">universitarios</option>
-                        <option value="none">ninguno</option>
-                    </select>
-                </li>
-                <li>
-                    <h4>Idiomas</h4>
-                    <input type="checkbox" name="languages" value="english"> Inglés
-                    <input type="checkbox" name="languages" value="french"> Francés
-                    <input type="checkbox" name="languages" value="german"> Alemán
-                    <input type="checkbox" name="languages" value="portuguese"> Portugués/Gallego
-                    <input type="checkbox" name="languages" value="other"> Otro
-                </li>    
+                    </li>
+                    <li>
+                        <label for="zip-code">Código Postal:</label>
+                        <input type="text" name="zip-code" id="zip-code" size="18" placeholder="Ingresa tu Código Postal">
+                    </li>
+                    <li>
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" name="city" value="Ciudad Autónoma de Buenos Aires" id="ciudad" size="30">
+                    </li>
+                    <li>
+                        <label for="phone">Teléfono</label>
+                        <input type="number" name="phonenumber" id="phone" placeholder="Cód de área + núm">
+                    </li>
+                    <li>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" name="email" id="email" placeholder="Ingresa tu dirección de E-mail" size="30">
+                    </li>
+                    <li>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña">
+                    </li>
+                    <li>
+                        <label for="repeat_password">Repite tu contraseña:</label>
+                        <input type="password" name="repeat_password" id="repeat_password" placeholder="Ingresa tu contraseña">
+                    </li>                  
+                    <li>
+                        <h4>Género</h4>
+                        <input type="radio" name="gender" value="male"> masculino
+                        <input type="radio" name="gender" value="female"> femenino
+                        <input type="radio" name="gender" value="other" checked> otro
+                    </li>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Formación académica:</legend>
+                    <li>
+                        <h4>Estudios</h4>
+                        <label for="estudios">Elige el nivel más alto que hayas alcanzado:</label>
+                        <select name="education" id="estudios">
+                            <option value="primary">primarios</option>
+                            <option value="secondary" selected>secundarios</option>
+                            <option value="technical">terciarios</option>
+                            <option value="university">universitarios</option>
+                            <option value="none">ninguno</option>
+                        </select>
+                    </li>
+                    <li>
+                        <h4>Idiomas</h4>
+                        <input type="checkbox" name="languages" value="english"> inglés
+                        <input type="checkbox" name="languages" value="french"> francés
+                        <input type="checkbox" name="languages" value="german"> alemán
+                        <input type="checkbox" name="languages" value="portuguese"> portugués/gallego
+                        <input type="checkbox" name="languages" value="other"> otro(s)
+                    </li>
+                </fieldset>   
             </ul>
             <span class="form_buttons">
                 <input type="submit" value="Enviar">

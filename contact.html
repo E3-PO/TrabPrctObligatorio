@@ -9,10 +9,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="Favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Favicons/favicon-16x16.png">
+        <link rel="manifest" href="Favicons/site.webmanifest">
         <title>Contacto</title>
     </head>
     <body>
@@ -27,11 +27,11 @@
             <br>
             <h1>
                 <span>
-                    <img src="img/justus-menke-hXLIjzpyv08-unsplash.jpg" alt="coffee beans" width="85">
+                    <img src="img/header_picture(edited).jpg" alt="coffee beans" width="85">
                 </span>
                 <span class="main_title">Coffee's</span>
-                <span>
-                    <img src="img/justus-menke-hXLIjzpyv08-unsplash.jpg" alt="coffee beans" width="85">
+                <span class="header_picture">
+                    <img src="img/header_picture(edited).jpg" alt="coffee beans" width="85">
                 </span>
             
             </h1>
@@ -39,12 +39,15 @@
         </header>
     <main>
         <section>
-            <h2>Contáctanos</h2>
-            <div><form action="show_data.html" target="_blank"></form>
+            <h2>Contáctanos:</h2>
+            <!--Por alguna razón no me está tomando la página show_data.html-->
+            <form action="show_data.html" target="_blank" method="POST">
+            <div><label for="email">Correo electrónico:</label>
+            <span class="email_textbox"><input type="text" name="email" id="email" size="25" placeholder="Escribe tu dirección de mail"></span></div>
             <label for="comments"></label>
-            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Escribe tu sugerencia o comentario aquí..."></textarea></div>
-            
+            <textarea name="comments" id="comments" cols="38" rows="10" placeholder="Escribe tu sugerencia o comentario aquí..."></textarea>
             <div class="form_buttons"><input type="submit" value="Enviar"></div>
+        </form>
             <br>
         </section>
     </main>
