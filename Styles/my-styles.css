@@ -4,6 +4,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
+
 header, footer{
     text-align: center;
     padding: 20px;
@@ -41,33 +42,47 @@ h1 span img{
 p{
     padding: 0 15px;
 }
+
 .recipe_button{
     margin: 0 0 10px 15px;
 }
+
 h2{
     padding: 20px 30px;
 }
+
 h4{
     margin: 5px 0 10px 0;
 }
+/*Esto es para que se vea bien en un celular.*/
 #estudios{
     margin: 10px 0 10px 20px;
 }
+
 a{
     color: floralwhite;
 }
-a:hover{
+/*Aquí está la transición...*/
+.header_navs:hover{
     background-color: rgb(245, 213, 117);
     color: darkred;
     padding: 8px;
     transition: .5s;
 }
-
+/*Aquí también está la transición...*/
 input[type="submit"]:hover, input[type="reset"]:hover{
     background-color: rgb(245, 213, 117);
     color: darkred;
     transition: .5s;
 }
+/*Y aquí también...*/
+footer span a:hover{
+    size: 80px;
+    padding: 10px;
+    border: 2px solid floralwhite;
+    transition: .5s; 
+}
+
 ul{
     list-style-position: inside;
 }
@@ -75,48 +90,58 @@ ul{
 table, td, th{
     border: 1px solid black;
 }
+
 table{
     border-collapse: collapse;
     margin-left: 20px;
 }
+
 td, th{
     padding: 5px 15px;
 }
+
 th{
     background-color: goldenrod;
     color: floralwhite;
 }
+
 .to_the_side{
     float: left;
-    padding: 20px 20px 0;
+    margin: 20px 20px 0;
 }
+/*Esto es para que se vea bien en un celular.*/
 .important{
     margin-left: 20px;
 }
+
 figcaption{
     font-size: 11px;
     padding: 3px 0 8px 0;
 }
+
 .i_frames{
     text-decoration: underline;
     font-weight: bold;
     margin: 18px;
 }
+
 form{
     margin-left: 30px;
 }
+
 form ul fieldset{
     border: 1px solid black;
     border-radius: 5px;
     padding: 15px 20px;
     background-color: floralwhite;
     margin-right: 35px;
-    list-style-type: none;
-    
+    list-style-type: none;   
 }
+
 legend{
     font-weight: bold;
 }
+
 input[type=text], input[type=number], input[type=tel], input[type=email], input[type=password], input[type=date]{
     display: inline-block;
     padding: 5px;
@@ -124,11 +149,13 @@ input[type=text], input[type=number], input[type=tel], input[type=email], input[
     border-radius: 5px;
     margin: 10px 20px;
 }
+
 .contact_email{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
+
 textarea{
     display: inline-block;
     width: 360px;
@@ -137,6 +164,13 @@ textarea{
     border-radius: 5px;
     margin: 10px auto;
 }
+
+#comments{
+    width: 90%;
+    height: 400px;
+    margin: 5px auto 0;
+}
+
 select{
     display: inline-block;
     padding: 5px;
@@ -144,6 +178,7 @@ select{
     border-radius: 5px;
     margin: 0 0 0px 20px;
 }
+
 input[type=submit], input[type=reset]{
     background-color: goldenrod;
     color: honeydew;
@@ -153,33 +188,72 @@ input[type=submit], input[type=reset]{
     margin: 5px;
     cursor: pointer;
 }
+
 .form_buttons input{
     margin: 20px 0 20px 20px;
     display: inline-block;
 }
-footer span{
+
+footer span a{
     text-decoration: none;
-    font-size: 30px;
+    font-size: 35px;
     margin: 0 25px;
+    display: inline-block;
 }
+
 .copyright{
-    font-size: 0.7em; 
-    margin-top: 1em;
+    font-size: .8em; 
+    margin: 1em 0 .6em;
 }
+
 .flex-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;     
 }
+
+@media screen and (max-width:600px) {
+    .mobile_only{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .languages{
+        margin: 2px 0;
+    }
+    .header_picture_left{
+        display: none;
+    }
+    #comments{
+        width: 90%;
+        height: 400px;
+        margin: 5px auto 0;
+    }
+    .to_the_side img{
+        width: 220px;
+        margin: 2px 0 0;    
+    }
+}
+/*Responsivo para desktop, tablet y mobile (incluyendo iPhone); en iPad el comportamiento puede no ser el esperado.*/
 @media screen and (max-width:768px) {
     header nav a{
         display: block;
         margin: 5px auto !important;
         width: 40%;
     }
+
+    #comments{
+        width: 90%;
+        height: 420px;
+        margin: 5px auto 0;
+    }
     
-    .header_picture{
+    .header_picture_right{
         display: none;
+    }
+    .to_the_side img{
+        width: 220px;
+        margin: 2px 0 0;    
     }
 }
